@@ -1,12 +1,17 @@
-# React + Vite
+**שיעורי בית 19 – אפליקציית סינון מוצרים**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**דרישות**
 
-Currently, two official plugins are available:
+תכונות עיקריות:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- API שליפת מוצרים: האפליקצייה חייבת לשלוף נתוני מוצרים מהAPI הבא: <https://dummyjson.com/products>
+- הצגת מוצרים: להציג את רשימת המוצרים. יש להציג לפחות את שם המוצר והמחיר שלו, ואפשר גם פרטים נוספים כמו תיאור, מותג וקטגוריה.
+- סינון מוצרים: לספק תפריט נפתח שמאפשר למשתמשים לסנן מוצרים לפי קטגוריה. התפריט צריך להימלא על פי קטגוריות המוצרים שנשלפו, כולל אופציה של "הכל" להצגת כל המוצרים.
 
-## Expanding the ESLint configuration
+**פרטים טכניים**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- להשתמש ב-useEffect: לטיפול בפעולות צד שאינן קשורות לרינדור, במיוחד לשליפת נתוני המוצרים מה-API כאשר הקומפוננטה מופעלת.
+- להשתמש ב-useRef: כדי להתמקד אוטומטית באלמנט הסלקט שנטען הדף
+
+תמונה לדוגמא: 
+![מוצרים](./fetch%20products.png)
